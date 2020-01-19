@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+  <head>
+    <title>TokyoVenues</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0,
+                   minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="css/umasou.css" type="text/css" />
+    <script src="js/jquery.min.js" type="text/javascript" id="jquery"></script>
+    <script src="js/umasou.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <h1>TokyoVenues: Spot Search for TimeOutTokyo.</h1>
+    <div id="abst">
+    <p>umasource:
+      <a href="//www.timeout.jp" target="_blank">TimeOutさん</a>
+    </p>
+    TimeOutの記事好きなのでヴェニュー記事を位置情報検索
+    できるようにしました．(おそらく全記事網羅できてない)
+    </div>
+    <div id="location">
+      <input id="address" type="text" name="addr">
+      -&gt
+      <button type="button" onClick="getLocationFromAddress();">
+        住所で検索
+      </button>
+      /
+      <button type="button" onClick="getLocation();">
+        現在地で検索
+      </button>
+    </div>
+    <div id="imgs">
+      <ul>
+      </ul>
+    </div>
+    <p id="to_top"><a href="#top">top</a></p>
+  </body>
+</html>
